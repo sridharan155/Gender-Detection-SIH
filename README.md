@@ -1,33 +1,43 @@
-# Billing Automation Web Application
+# Gender Detection from Facial Images using CNN
 
-A web-based platform designed to **automate employee expenditure tracking and billing**, making the reimbursement process faster and more organized. Employees can log in, submit expenses with proof, and view the status of their bills. Built with **Flask**, **MongoDB**, and front-end technologies.
+This project is a deep learning-based application that detects and classifies **gender** (Male/Female) from facial images. It also counts and displays the total number of males and females detected in real-time using **OpenCV** and a **Convolutional Neural Network (CNN)**.
 
 
-🔧 Key Features
+🧠 Project Overview
 
-- Secure **Sign In / Sign Up** using company email ID
-- Submit expenditures with image proof or manual entry
-- Tax-based classification: **With Tax / Without Tax**
-- Tracks approval/rejection status for each bill
-- Monthly expense summary and visualization dashboard
+With the help of CNN and facial recognition, this project aims to automate gender classification from images or webcam video streams. It is trained on a dataset containing labeled facial images and works with both static images and live feeds.
+
+
+✨ Features
+
+- ✅ Real-time gender detection using webcam
+- ✅ Supports static image-based prediction
+- ✅ Displays count of detected **Males** and **Females**
+- ✅ High accuracy with a lightweight CNN model
+- ✅ Easy to integrate and deploy
+
+
+🗃️ Dataset Used
+
+- Dataset: **UTKFace** / Custom Labeled Dataset
+- 2,000+ facial images with gender labels
+- Includes various age groups, ethnicities, and lighting conditions
+
 
 ⚙️ Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Python (Flask)
-- **Database:** MongoDB
-- **OCR Integration:** For reading receipts
+- **Language:** Python
+- **Libraries:** 
+  - TensorFlow / Keras
+  - OpenCV
+  - NumPy
+  - Matplotlib
+- **Model:** Custom CNN for binary classification
 
-📊 Modules
 
-- **Login System:** Company email verification and password reset
-- **Dashboard:** Upload bills, view summaries, and status
-- **Billing Status Page:** View all transactions with filters
-- **Total Calculator:** Monthly total with and without tax
+🚀 How to Run
 
-## 🚀 How to Run Locally
-
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/billing-automation-app.git
-   cd billing-automation-app
+   git clone https://github.com/yourusername/gender-detection-cnn.git
+   cd gender-detection-cnn
